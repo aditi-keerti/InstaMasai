@@ -16,7 +16,7 @@ app.use(cors({
 
 app.use(express.json())
 app.get('/',(req,res)=>{
-    res.json({mesg:"this is home page"})
+    res.send("this is home page")
 })
 app.use('/users',userRoute)
 app.use('/posts',postRoute)
