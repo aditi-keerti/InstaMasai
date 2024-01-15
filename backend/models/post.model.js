@@ -9,7 +9,7 @@ const postSchema=mongoose.Schema({
     versionKey:false
 })
 
-const PostModel=mongoose.model('blacklist',blackListSchema)
+const PostModel=mongoose.model('post',postSchema)
 
 module.exports={
     PostModel
